@@ -53,19 +53,19 @@ def main():
 
 
     loss2col = {}
-    loss2col['G1_GAN'] = 8
-    loss2col['G1_L1'] = 10
-    loss2col['G1_MSE_gt'] = 12
-    loss2col['G1_MSE'] = 14
-    loss2col['D1_real'] = 16
-    loss2col['D1_fake'] = 18
+    loss2col['G_GAN'] = 8
+    loss2col['G_L1'] = 10
+    loss2col['G_MSE_gt'] = 12
+    loss2col['G_MSE'] = 14
+    loss2col['D_real'] = 16
+    loss2col['D_fake'] = 18
     loss2col['G_L1'] = 20
 
     loss_path = opt.logRoot
     n_avg = opt.avg
 
     ind = [(0,0),(0,1),(0,2),(0,3),(1,0),(1,1),(1,2)]
-    loss_type = ['G1_GAN','G1_L1','G1_MSE_gt','G1_MSE','D1_real','D1_fake','G_L1']
+    loss_type = ['G_GAN','G_L1','G_MSE_gt','G_MSE','D_real','D_fake','G_L1']
     loss_ = []
     epoch_ = []
     fig, axes = plt.subplots(2,4, figsize=(14,8))
